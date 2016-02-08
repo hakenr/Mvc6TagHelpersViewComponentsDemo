@@ -2,7 +2,7 @@
 
 namespace TagHelpersAndViewComponents.TagHelpers
 {
-	[HtmlTargetElement(Attributes = "asp-condition")]
+	//[HtmlTargetElement(Attributes = "asp-condition")]
 	public class ConditionTagHelper : TagHelper
 	{
 		[HtmlAttributeName("asp-condition")]
