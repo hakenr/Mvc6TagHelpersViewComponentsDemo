@@ -1,5 +1,5 @@
 ﻿@using System.Threading.Tasks
-@using TagHelpersAndViewComponents.Components
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -41,12 +41,16 @@
 		</div>
 	</div>
 	<div class="container body-content">
-		@Component.Invoke("LastVisits", 2)
-		@await Component.InvokeAsync("CountOfUsers")
-
 		@RenderBody()
 		<hr />
 		<footer>
+
+
+			@Component.Invoke("LastVisits", 2)
+
+			@await Component.InvokeAsync("CountOfUsers")
+
+
 			<p>&copy; 2016 - TagHelpersAndViewComponents</p>
 		</footer>
 	</div>
