@@ -1,0 +1,9 @@
+﻿@model IEnumerable<TagHelpersAndViewComponents.Services.UserVisit>
+
+<h4>Last Visits</h4>
+<ul>
+	@foreach (var userVisit in Model)
+	{
+		<li>@userVisit.User.UserName, @userVisit.VisitTime</li>
+	}
+</ul>
