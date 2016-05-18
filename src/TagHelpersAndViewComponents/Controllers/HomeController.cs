@@ -31,5 +31,10 @@ namespace TagHelpersAndViewComponents.Controllers
         {
             return View();
         }
+
+	    public IActionResult Component()
+	    {
+		    return ViewComponent("LastVisits", 2);
+	    }
     }
 }
